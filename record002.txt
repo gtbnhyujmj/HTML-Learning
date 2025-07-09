@@ -1,0 +1,9 @@
+HTML 裡面 適用<div> 在做隔間，他是區隔的概念。
+
+<div> 是 HTML 裡的區塊元素（block-level element），全名是 "division"（區塊），用途就是「把畫面切成一區一區，好管理、好設計」。
+
+誤用: 用 <div> 當作一切元素（"div神教"）	
+正確做法: 建議每個 <div> 搭配有意義的 class 或 id應該改用語意標籤（如 <header>, <nav>, <section>, <article>）來加強語意
+
+誤用: 沒加 class/id，讓維護變困難	
+正確做法: 議每個 <div> 搭配有意義的 class 或 id
