@@ -1,0 +1,14 @@
+HTML裡面 所有要預載的東西 要放在<head>裡面
+<head> 是用來設定與資源連結，不是用來放畫面內容的地方
+
+放在 <head> 的目的： 讓瀏覽器在主畫面呈現前先準備好資源。
+✅ 放：CSS、meta、title、favicon、重要 JS（加 defer/async）、字體 preload。
+❌ 不放：頁面內容（div 等）、同步 JS（會阻塞）、互動性低的 JS。
+
+小技巧：加快載入速度用 preload、prefetch
+<!-- 預先載入關鍵 JS 或字體 -->
+<link rel="preload" href="/js/important.js" as="script">
+<link rel="preload" href="/fonts/myfont.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- 預抓取非立即需要的資源（下一頁用） -->
+<link rel="prefetch" href="/next-page.html">
