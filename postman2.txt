@@ -1,0 +1,21 @@
+📦 三、其他常用功能
+功能	說明
+Collection	儲存一系列 API 請求（可分享、版本管理）
+Environment	可設定變數（例如 BASE_URL、TOKEN）
+Tests	在回應後自動執行 JavaScript 做驗證
+Pre-request Script	在發送前執行的 JS 程式碼，例如自動加時間戳
+
+❓你可以用 Postman 做什麼？
+測試你自己寫的 Flask / Node.js API
+
+測試別人提供的 API 文件
+
+模擬表單送出或登入流程
+
+產生測試報告（進階用）
+
+如果你願意，我可以幫你：
+
+模擬某個 API 請求的填法（只要你提供 API 文件）
+
+幫你用 Postman 測試你寫的 Flask 接口
