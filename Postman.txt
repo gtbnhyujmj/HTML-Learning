@@ -1,0 +1,51 @@
+Postman 是一個非常好用的 API 測試工具，讓你可以用圖形介面來發送 HTTP 請求，不用自己寫程式，也可以清楚看到伺服器回傳的資料。
+
+1. 建立一個請求 (Request)
+開啟 Postman，點左上角的「+」新增一個 Tab。
+
+選擇請求的方法（GET / POST / PUT / DELETE 等）
+
+在網址欄輸入 API URL，例如：
+
+arduino
+複製
+編輯
+https://jsonplaceholder.typicode.com/posts
+按下「Send」，即可發送請求。
+
+2. 查看回應 (Response)
+Postman 下方會顯示伺服器回傳的結果，包含：
+
+Status（狀態碼，例如 200、404）
+
+Time（花費時間）
+
+Size（資料大小）
+
+Body（回應內容，通常是 JSON）
+
+3. 發送 POST 請求（傳送資料）
+將 Method 改成 POST
+
+點選「Body」→ 選「raw」→ 選「JSON」
+
+輸入資料，例如：
+
+json
+複製
+編輯
+{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1
+}
+點「Send」發送，會得到回傳內容（例如新增成功的資料）
+
+4. 加上 Headers（常見的 Content-Type 或 API 金鑰）
+點選「Headers」頁籤
+
+輸入：
+
+Key	Value
+Content-Type	application/json
+Authorization	Bearer 你的API金鑰（選填）
