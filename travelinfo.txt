@@ -8,3 +8,19 @@ css
 
 ✅ 意思：
 選擇 class 為 travelinfo 的元素，且它的父層是 class 為 Travel 的元素，也就是「Travel 的直屬小孩」。
+
+
+<div class="Travel">
+  <div class="travelinfo">
+    這一層會被選到 ✔️
+  </div>
+</div>
+
+<div class="Travel">
+  <section>
+    <div class="travelinfo">
+      這一層不會被選到 ❌（不是直屬子層）
+    </div>
+  </section>
+</div>
+
