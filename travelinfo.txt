@@ -24,3 +24,8 @@ css
   </section>
 </div>
 
+
+✅ 補充：
+.Travel .travelinfo（空格）是「後代選擇器」：不管有幾層都會選到 travelinfo
+
+.Travel > .travelinfo（加 >）是「子選擇器」：只選直屬的第一層孩子
