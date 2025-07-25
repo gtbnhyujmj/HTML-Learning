@@ -1,0 +1,17 @@
+    >>> with messages = 建立變數 messages，只在這一區塊中有效
+    >>> get_flashed_messages = 從 Flask session 中拿出一次性訊息
+
+{% with messages = get_flashed_messages() %}
+
+      >>> if messages = 如果真的有訊息，就進入顯示區塊
+  {% if messages %}
+
+    <ul>      
+          >>> for msg in messages = 把每個訊息用 li 顯示出來
+      {% for msg in messages %}
+        <li style="color: red;">{{ msg }}</li>
+      {% endfor %}    
+    </ul>
+
+  {% endif %}
+{% endwith %}
