@@ -1,0 +1,7 @@
+<!-- {% for ... %} {% else %} {% endfor %} -->
+        
+<!-- 
+這是 Jinja2 的一個語法糖：
+如果 parsed_dict 裡有資料，就跑 for
+如果是空的（完全沒有 key），就顯示 else 裡的東西 
+-->
