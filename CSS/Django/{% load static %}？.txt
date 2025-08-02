@@ -1,25 +1,22 @@
 ✅ 為什麼要 {% load static %}？
-Django 把某些功能標籤（像 {% static %}, {% url %}）包裝成「擴充標籤」，必須顯式地先載入。
 
+Django 把某些功能標籤（像 {% static %}, {% url %}）包裝成「擴充標籤」，必須顯式地先載入。
 就像你引用 Python 函式前要先 import 一樣。
 
-☑️ 修好後，應該會：
-成功顯示 basepages.html
+---
 
-CSS/JS 路徑能正常載入（如果你放對位置）
+順便提醒：你 index.css 應該放在這個資料夾：
 
-❗順便提醒：你 index.css 應該放在這個資料夾：
-cpp
-複製
-編輯
 accounts/
 ├── static/
 │   └── css/
 │       └── index.css
-並在 settings.py 中確認有這一行（預設會有）：
 
-python
-複製
-編輯
-'APP_DIRS': True,  # ✅ 要能掃 app 裡的 static/
-修完 {% load static %} 後你再跑一次看看，應該就成功了。
+---
+
+並在 settings.py 中確認有這一行（預設會有）：
+> 自動掃 app 裡的 static/
+
+'APP_DIRS': True,  
+
+===
