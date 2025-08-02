@@ -1,0 +1,12 @@
+✅ 如果你沒用 Bootstrap，可以用原生 HTML 寫成這樣：
+
+<div style="text-align: right; padding: 10px;">
+  {% if request.user.is_authenticated %}
+    歡迎，{{ request.user.username }}！
+    <a href="{% url 'logout' %}">登出</a>
+  
+  {% else %}
+    <a href="{% url 'login' %}">登入</a> | 
+    <a href="{% url 'register' %}">註冊</a>
+  {% endif %}
+</div>
